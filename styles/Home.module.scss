@@ -1,3 +1,5 @@
+$primary-color: blue;
+
 .container {
   padding: 0 2rem;
 }
@@ -19,18 +21,12 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
 }
 
 .title a:hover,
@@ -43,6 +39,10 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  }
 }
 
 .title,
@@ -88,8 +88,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: $primary-color;
+  border-color: $primary-color;
 }
 
 .card h2 {
